@@ -17,12 +17,12 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="0dp">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--tools:layout_editor_absoluteX="63dp"-->
+        <!--tools:layout_editor_absoluteY="0dp">-->
 
         <GridLayout
             android:layout_width="match_parent"
@@ -84,8 +84,8 @@
                 android:text="Add 1 " />
 
         </GridLayout>
-    </LinearLayout>
-            />
+    <!--</LinearLayout>-->
+
 
         <TextView
             android:id="@+id/topMessage"
