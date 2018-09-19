@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ScoreCounter</string>
+    <string name="Team1Score">0</string>
+    <string name="team2Score">0</string>
 </resources>
