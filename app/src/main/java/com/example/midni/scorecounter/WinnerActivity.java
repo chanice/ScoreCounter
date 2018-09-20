@@ -22,6 +22,6 @@ public class WinnerActivity extends AppCompatActivity {
         winScore = (Integer) intent.getExtras().get(MainActivity.KEYSCORE);
         winningTeam = intent.getExtras().get(MainActivity.KEYWINNER).toString();
         winningMessage = findViewById(R.id.winnerText);
-        winningMessage.setText("The winning team is "+winningTeam+" by "+winScore+" points");
+        winningMessage.setText("The winning team is "+winningTeam+" by "+winScore+" point(s)");
     }
 }
