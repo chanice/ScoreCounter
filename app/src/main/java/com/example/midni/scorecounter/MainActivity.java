@@ -6,6 +6,7 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Button;
 import android.view.View;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button increase1;
     private Button increase2;
     private static final String TAG = "MainActivity";
+    protected static final String KEYWINNER  = "Winner";
+    private String winningTeam;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,11 +39,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(increase1.equals(view)){
 
             count1++;
+            if(count1 == 5){
+                winningTeam = "Team 1";
+            }
             Team1Score.setText(""+count1);
         }
     else if(increase2.equals(view)){
             Log.d(TAG,"score2 increase");
             count2++;
+            if(count2 == 5){
+                winningTeam = "Team2";
+                nextActivity(view);
+            }
             updateScore();
         }
     }
@@ -50,4 +60,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Team2Score.setText(""+count2);
     }
 
-}
+//    @Override
+//    protected void onRestoreInstanceState(BundlesavedInstanceState) {
+//        super.onRestoreInstanceState(savedInstanceState);
+//        count1 = savedInstanceState.getInt("", count1);
+//        count2 = savedInstanceState.getInt("", count2);
+//    }
+
+    public void nextActivity(View view){
+        Intent intent = new Intent(this,WinnerActivity.class);
+        intent.putExtra(KEYWINNER,winningTeam);
+        startActivity(intent);
+
+    }}
