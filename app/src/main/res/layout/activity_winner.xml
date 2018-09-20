@@ -11,14 +11,16 @@
     <TextView
         android:id="@+id/winnerText"
         android:layout_width="match_parent"
-        android:layout_height="79dp"
-        android:textSize="40sp" />
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:textSize="30sp" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="583dp"
-        app:srcCompat="@drawable/badmintonTrophy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/badmintontrophy"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="56dp" />
 </LinearLayout>

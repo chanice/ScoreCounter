@@ -11,6 +11,7 @@ public class WinnerActivity extends AppCompatActivity {
 
     private TextView winningMessage;
     private String winningTeam;
+    private int winScore;
     private static final String TAG = "WinnerActivity";
 
     @Override
@@ -18,8 +19,9 @@ public class WinnerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_winner);
         Intent intent = getIntent();
+        winScore = (Integer) intent.getExtras().get(MainActivity.KEYSCORE);
         winningTeam = intent.getExtras().get(MainActivity.KEYWINNER).toString();
         winningMessage = findViewById(R.id.winnerText);
-        winningMessage.setText("The winning Team is "+winningTeam);
+        winningMessage.setText("The winning team is "+winningTeam+" by "+winScore+" points");
     }
 }

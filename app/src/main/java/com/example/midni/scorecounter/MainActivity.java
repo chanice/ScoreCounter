@@ -16,8 +16,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private int count2 = 0;
     private Button increase1;
     private Button increase2;
+    private int winDifference;
     private static final String TAG = "MainActivity";
     protected static final String KEYWINNER  = "Winner";
+    protected static final String KEYSCORE = "Points";
     private String winningTeam;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             count1++;
             if(count1 == 5){
                 winningTeam = "Team 1";
+                calculateWinDifference(count2);
+                nextActivity(view);
+
             }
             Team1Score.setText(""+count1);
         }
@@ -49,7 +54,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             count2++;
             if(count2 == 5){
                 winningTeam = "Team2";
+                calculateWinDifference(count1);
                 nextActivity(view);
+
             }
             updateScore();
         }
@@ -58,6 +65,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.d(TAG,"UPDATE SCORE METHOD");
 
         Team2Score.setText(""+count2);
+    }
+    public void calculateWinDifference(int loserScore){
+        winDifference = 5-loserScore;
     }
 
 //    @Override
@@ -70,6 +80,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void nextActivity(View view){
         Intent intent = new Intent(this,WinnerActivity.class);
         intent.putExtra(KEYWINNER,winningTeam);
+        intent.putExtra(KEYSCORE,winDifference);
         startActivity(intent);
 
-    }}
+    }
+}

@@ -24,66 +24,68 @@
         <!--tools:layout_editor_absoluteX="63dp"-->
         <!--tools:layout_editor_absoluteY="0dp">-->
 
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:columnCount="2"
-            android:rowCount="10">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="10"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_column="0"
-                android:gravity="center"
-                android:text="TEAM 1 SCORE"
-                android:textSize="25sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:gravity="center"
+            android:text="TEAM 1 SCORE"
+            android:textSize="25sp" />
 
-            <TextView
-                android:id="@+id/Title2"
-                android:layout_width="193dp"
-                android:layout_height="wrap_content"
-                android:layout_column="1"
-                android:layout_marginLeft="15dp"
-                android:layout_row="0"
-                android:gravity="center"
-                android:text="TEAM 2 SCORE"
-                android:textSize="25sp" />
+        <TextView
+            android:id="@+id/Title2"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="15dp"
+            android:layout_row="0"
+            android:gravity="center"
+            android:text="TEAM 2 SCORE"
+            android:textSize="25sp" />
 
-            <TextView
-                android:id="@+id/teamOneScore"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_column="0"
-                android:layout_row="1"
-                android:text="@string/Team1Score"
-                android:textSize="90sp" />
+        <TextView
+            android:id="@+id/teamOneScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="@string/Team1Score"
+            android:textSize="90sp" />
 
-            <TextView
-                android:id="@+id/teamTwoScore"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_column="1"
-                android:layout_row="1"
-                android:text="@string/team2Score"
-                android:textSize="90sp" />
+        <TextView
+            android:id="@+id/teamTwoScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:text="@string/team2Score"
+            android:textSize="90sp" />
 
-            <Button
-                android:id="@+id/teamOneButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_column="0"
-                android:layout_row="4"
-                android:text="Add 1" />
+        <Button
+            android:id="@+id/teamOneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:text="Add 1" />
 
-            <Button
-                android:id="@+id/teamTwoButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_column="1"
-                android:layout_row="4"
-                android:text="Add 1 " />
+        <Button
+            android:id="@+id/teamTwoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:text="Add 1 " />
 
-        </GridLayout>
+    </GridLayout>
     <!--</LinearLayout>-->
 
 
