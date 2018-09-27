@@ -14,7 +14,21 @@
         android:layout_height="wrap_content"
         android:background="@color/colorWhite"
         android:textSize="30sp" />
-
+    <Button
+        android:id="@+id/textShareButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share Message" />
+    <Button
+        android:id="@+id/callShareButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share Call" />
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Game" />
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -23,4 +37,6 @@
         app:srcCompat="@drawable/badmintontrophy"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="56dp" />
+
+
 </LinearLayout>
