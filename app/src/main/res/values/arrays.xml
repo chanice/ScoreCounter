@@ -7,6 +7,11 @@
         <item>Soccer</item>
         <item>VolleyBall</item>
     </string-array>
+    <string-array name="rewardsArray">
+        <item>Medal</item>
+        <item>Trophy</item>
+        <item>GiftCard</item>
+    </string-array>
 
 
 
